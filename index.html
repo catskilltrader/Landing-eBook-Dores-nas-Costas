@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dores nas Costas - Resolva em Casa de Forma Simples</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 0;
+            flex-wrap: wrap;
+        }
+        
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
+        
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #3498db;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        
+        .cta-button:hover {
+            background-color: #c0392b;
+        }
+        
+        .benefits {
+            background-color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .benefits-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .benefit-item {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            margin: 15px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .benefit-item img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+        
+        .testimonials {
+            padding: 50px 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        
+        .testimonial-item {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .author {
+            font-weight: bold;
+            margin-top: 20px;
+            color: #3498db;
+        }
+        
+        .offer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #e74c3c;
+            margin: 20px 0;
+        }
+        
+        .guarantee {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        
+        .guarantee img {
+            width: 50px;
+            margin-right: 15px;
+        }
+        
+        footer {
+            background-color: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+            }
+            
+            .benefits-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dores nas Costas? Descubra Como Aliviar em Casa!</h1>
+            <p>O guia definitivo para acabar com as dores nas costas sem medicamentos ou cirurgias</p>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Diga Adeus às Dores nas Costas de Forma Natural!</h2>
+                <p>Você sofre com dores nas costas que limitam sua qualidade de vida? Este eBook revela técnicas comprovadas que você pode aplicar em casa para aliviar a dor e recuperar sua liberdade de movimento.</p>
+                <p><strong>Método 100% natural</strong> - Sem medicamentos, sem efeitos colaterais, sem riscos!</p>
+                <a href="#oferta" class="cta-button">QUERO ME LIVRAR DAS DORES AGORA!</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Pessoa realizando exercício para aliviar dores nas costas">
+            </div>
+        </div>
+    </section>
+    
+    <section class="benefits">
+        <div class="container">
+            <h2>O Que Você Vai Aprender Neste eBook:</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2936/2936886.png" alt="Exercícios">
+                    <h3>Exercícios Simples</h3>
+                    <p>Sequências de movimentos fáceis que aliviam a tensão muscular e melhoram a postura.</p>
+                </div>
+                <div class="benefit-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3048/3048127.png" alt="Alongamentos">
+                    <h3>Alongamentos Eficazes</h3>
+                    <p>Técnicas de alongamento que proporcionam alívio imediato da dor.</p>
+                </div>
+                <div class="benefit-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2933/2933245.png" alt="Prevenção">
+                    <h3>Prevenção</h3>
+                    <p>Hábitos diários que previnem o retorno das dores e melhoram sua saúde vertebral.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonials">
+        <div class="container">
+            <h2>O Que Dizem Quem Já Usou o Método:</h2>
+            <div class="testimonial-item">
+                <p>"Depois de 10 anos sofrendo com hérnia de disco, finalmente encontrei alívio com os exercícios deste eBook. Em 3 semanas minha dor reduziu em 80%!"</p>
+                <div class="author">- Carlos M., 52 anos</div>
+            </div>
+            <div class="testimonial-item">
+                <p>"Trabalho sentado o dia todo e minhas costas viviam travando. Aprendi técnicas simples que faço no escritório e mudaram completamente minha qualidade de vida."</p>
+                <div class="author">- Ana P., 38 anos</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="offer" id="oferta">
+        <div class="container">
+            <h2>Oferta Especial por Tempo Limitado!</h2>
+            <p>Adquira agora mesmo o eBook completo e comece hoje mesmo a se livrar das dores nas costas!</p>
+            
+            <div style="margin: 20px 0;">
+                <span style="text-decoration: line-through; color: #ccc; font-size: 1.5rem;">De R$ 79,90</span>
+                <span style="font-size: 1.5rem; margin: 0 10px;">→</span>
+                <span class="price" style="font-size: 3rem;">R$ 19,90</span>
+            </div>
+            
+            <p style="font-size: 1.2rem; color: #f1c40f; font-weight: bold;">Economize R$ 60,00 (75% OFF)</p>
+            <p>ou 2x de R$ 9,95 no cartão</p>
+            
+            <a href="#" class="cta-button">COMPRAR AGORA!</a>
+            
+            <div class="guarantee">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" alt="Garantia">
+                <p>Garantia de 7 dias: Se você não ficar satisfeito, devolvemos seu dinheiro!</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 Dores nas Costas - Resolva em Casa. Todos os direitos reservados.</p>
+            <p>Este produto não substitui o acompanhamento médico profissional.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -85,6 +85,8 @@
             font-size: 1.2rem;
             transition: background-color 0.3s;
             margin-top: 20px;
+            cursor: pointer; /* Adicionado para melhor usabilidade */
+            border: none; /* Garante que não tenha borda padrão */
         }
         
         .cta-button:hover {
@@ -261,7 +263,8 @@
             <p style="font-size: 1.2rem; color: #f1c40f; font-weight: bold;">Economize R$ 60,00 (75% OFF)</p>
             <p>ou 2x de R$ 9,95 no cartão</p>
             
-            <a href="#" class="cta-button">COMPRAR AGORA!</a>
+            <!-- BOTÃO COM LINK DA HOTMART - CORRIGIDO -->
+            <a href="https://pay.hotmart.com/B101393274R" class="cta-button" target="_blank" rel="noopener noreferrer">COMPRAR AGORA!</a>
             
             <div class="guarantee">
                 <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" alt="Garantia">
@@ -276,5 +279,23 @@
             <p>Este produto não substitui o acompanhamento médico profissional.</p>
         </div>
     </footer>
+
+    <!-- Script adicional para garantir funcionamento em todos os navegadores -->
+    <script>
+        // Função para garantir que os links abram corretamente
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.cta-button');
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    // Para o botão que leva à seção de oferta, não faz nada especial
+                    if(this.getAttribute('href').startsWith('#')) return;
+                    
+                    // Para links externos, garante a abertura
+                    console.log('Redirecionando para a página de compra...');
+                    // O navegador seguirá o link normalmente
+                });
+            });
+        });
+    </script>
 </body>
 </html>

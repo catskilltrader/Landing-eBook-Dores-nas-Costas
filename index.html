@@ -14,6 +14,23 @@
       gtag('config', 'AW-17457127974');
     </script>
     
+    <!-- Google Ads Event Snippet para acompanhamento de conversões -->
+    <script>
+      // Função para rastrear conversões do Google Ads
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17457127974/xxxxxxxxxxxxx', // Substitua pelo ID de conversão específico
+          'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+    
     <style>
         * {
             margin: 0;
@@ -95,8 +112,8 @@
             font-size: 1.2rem;
             transition: background-color 0.3s;
             margin-top: 20px;
-            cursor: pointer; /* Adicionado para melhor usabilidade */
-            border: none; /* Garante que não tenha borda padrão */
+            cursor: pointer;
+            border: none;
         }
         
         .cta-button:hover {
@@ -217,7 +234,7 @@
                 <a href="#oferta" class="cta-button">QUERO ME LIVRAR DAS DORES AGORA!</a>
             </div>
             <div class="hero-image">
-                <img src="https://github.com/catskilltrader/Outros/blob/main/eBook%20Costas%20site%202.jpg?raw=true">
+                <img src="https://github.com/catskilltrader/Outros/blob/main/eBook%20Costas%20site%202.jpg?raw=true" alt="Alívio para dores nas costas">
             </div>
         </div>
     </section>
@@ -273,8 +290,8 @@
             <p style="font-size: 1.2rem; color: #f1c40f; font-weight: bold;">Economize R$ 60,00 (75% OFF)</p>
             <p>ou 2x de R$ 9,95 no cartão</p>
             
-            <!-- BOTÃO COM LINK DA HOTMART - CORRIGIDO -->
-            <a href="https://pay.hotmart.com/B101393274R" class="cta-button" target="_blank" rel="noopener noreferrer">COMPRAR AGORA!</a>
+            <!-- Botão de compra com rastreamento de conversão -->
+            <a href="https://pay.hotmart.com/B101393274R" class="cta-button" onclick="return gtag_report_conversion('https://pay.hotmart.com/B101393274R')" target="_blank" rel="noopener noreferrer">COMPRAR AGORA!</a>
             
             <div class="guarantee">
                 <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" alt="Garantia">
@@ -290,7 +307,6 @@
         </div>
     </footer>
 
-    <!-- Script adicional para garantir funcionamento em todos os navegadores -->
     <script>
         // Função para garantir que os links abram corretamente
         document.addEventListener('DOMContentLoaded', function() {
